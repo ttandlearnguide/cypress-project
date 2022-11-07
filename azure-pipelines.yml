@@ -18,5 +18,7 @@ steps:
 - script: |
     npm install
     npm run build
-    npm open cypress
-  displayName: 'npm install and build'
+- task: Npm@1
+  inputs:
+    command: 'install'
+  displayName: 'npm open cypress'
