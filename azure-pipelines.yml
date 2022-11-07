@@ -21,7 +21,7 @@ steps:
 - task: Npm@1
   inputs:
     command: 'install'
-  displayName: 'npm open cypress'
+  displayName: 'npx open cypress'
 - task: Npm@1
   inputs:
     command: 'install'
